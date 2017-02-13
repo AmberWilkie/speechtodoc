@@ -1,3 +1,9 @@
 .row
-    Woah there, it's HAML.
+    Here's the last thing:
+    - if @document_text
+        = @document_text
     .text_field
+    = form_tag documents_path, method: :post
+    -#= hidden_field_tag 'hidden info', '', id: 'hidden_info'
+    .text_field_hidden{style: "display: none;"}
+    = submit_tag 'Save', class: 'orange_link', id: 'document_save'

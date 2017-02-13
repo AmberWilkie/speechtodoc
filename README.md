@@ -7,6 +7,7 @@ Main functionality: speak emails, documents, whatever. Save as an individual doc
 - Allow users to email themselves their documents.
 - Create users and allow users to view only their own documents.
 - Add in speech synthesis so the program can speak aloud your documents.
+- Deal with paragraphs so that every pause doesn't become a new section and users can set their own line breaks.
 
 ### Built With
 - Rails
