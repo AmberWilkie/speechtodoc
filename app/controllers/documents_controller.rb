@@ -8,7 +8,7 @@ class DocumentsController < ApplicationController
 
   def create
     binding.pry
-    @document_text = Gon.global.document_text
+    # @document_text = Gon.global.document_text
     render 'index'
   end
 end
