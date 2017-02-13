@@ -6,10 +6,11 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= include_gon %>
+
   </head>
 
   <body>
+  <%= include_gon %>
     <% flash.each do |key, value| %>
         <div class="text-center <%= flash_class(key) %>">
           <%= value %>

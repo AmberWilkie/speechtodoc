@@ -1,9 +1,7 @@
 .row
-    Here's the last thing:
-    - if @document_text
-        = @document_text
-    .text_field
-    = form_tag documents_path, method: :post
-    -#= hidden_field_tag 'hidden info', '', id: 'hidden_info'
-    .text_field_hidden{style: "display: none;"}
+  -#.text_field
+  = form_tag documents_path, method: :post do
+    -#= hidden_field_tag 'hidden info', '', id: 'hidden_info' do
+    -#    .text_field_hidden{style: "display: none;"}
+    = text_area_tag 'document_text', '', id: 'doc_text_area'
     = submit_tag 'Save', class: 'orange_link', id: 'document_save'
