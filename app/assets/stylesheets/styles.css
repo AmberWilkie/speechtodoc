@@ -162,3 +162,16 @@ input {
   margin: 4px 2px;
   cursor: pointer;
 }
+.text_field {
+    /*margin-left: 5%;*/
+    /*margin-right: 5%;*/
+    /*margin-top: 2%;*/
+    /*margin-bottom: 5%;*/
+    margin: 2% 5% 5% 5%;
+    padding: 20px;
+    border: solid black 2px;
+}
+
+.document {
+    padding: 10px;
+}

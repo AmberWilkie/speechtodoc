@@ -4,7 +4,7 @@ $(document).ready(function() {
     const recognition = new SpeechRecognition();
     recognition.interimResults = true; // Allows program to work before you quit speaking.
 
-    var p = document.createElement('p');
+    var p = document.createElement('p.document');
     const text_field = document.querySelector('.text_field');
     text_field.appendChild(p);
 
