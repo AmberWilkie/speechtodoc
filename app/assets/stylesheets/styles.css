@@ -162,7 +162,8 @@ textarea {
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
-    margin: 30px;
+    padding-right: 30px;
+    margin-right: 30px;
 }
 
 input {
