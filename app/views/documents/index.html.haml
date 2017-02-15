@@ -1,8 +1,15 @@
 .row
-  Just 'ok' the app to use your mic, then talk. When you're done, make some changes (be quiet, though!) and then click Save to save the document to your document list.
-  -#.text_field
-  = form_tag documents_path, method: :post do
-    -#= hidden_field_tag 'hidden info', '', id: 'hidden_info' do
-    -#    .text_field_hidden{style: "display: none;"}
-    = text_area_tag 'document_text', '', id: 'doc_text_area'
-    = submit_tag 'Save', class: 'orange_link', id: 'document_save'
+  %h1 Your documents!
+  .margin-top
+    - @documents.each do |document|
+      = link_to document do
+        .medium-4.columns
+          .card.margin
+            -#.image
+            -#<img src="http://static.pexels.com/wp-content/uploads/2014/07/alone-clouds-hills-1909-527x350.jpg">
+            %span.title
+              = document.title
+            .content
+              = document.body
+            .action
+              = document.created_at.strftime("%d %B, %Y")

@@ -1,0 +1,6 @@
+.row
+  Just 'ok' the app to use your mic, then talk. When you're done, make some changes (be quiet, though!) and then click Save to save the document to your document list.
+  = form_for @document do |f|
+    = f.text_area :body
+    = f.text_field :title
+    = f.submit 'Save', class: 'orange_link', id: 'document_save'

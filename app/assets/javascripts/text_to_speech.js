@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     const text_area = document.querySelector('#doc_text_area');
 
-    // const text_field_hidden = document.querySelector('.text_field_hidden');
+    // const text_field_hidden = documents.querySelector('.text_field_hidden');
     // text_field.appendChild(p);
     // text_field_hidden.appendChild(p);
 

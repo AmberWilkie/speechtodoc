@@ -1,14 +1,25 @@
 class DocumentsController < ApplicationController
 
   def index
-    # gon.clear
-    # gon.document_text = 'default text'
-    # @document_text = gon.document_text
+    @documents = Document.all
+  end
+
+  def show
+    @document = Document.find(params[:id])
+  end
+
+  def new
+    @document = Document.new
   end
 
   def create
-    binding.pry
-    # @document_text = Gon.global.document_text
+    @document = Document.create(sanitized_params)
     render 'index'
+  end
+
+  private
+
+  def sanitized_params
+    params.require(:document).permit(:title, :body)
   end
 end
