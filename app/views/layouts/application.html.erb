@@ -10,7 +10,6 @@
   </head>
 
   <body>
-  <%= include_gon %>
     <% flash.each do |key, value| %>
         <div class="text-center <%= flash_class(key) %>">
           <%= value %>

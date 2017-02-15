@@ -4,7 +4,7 @@ $(document).ready(function() {
     const recognition = new SpeechRecognition();
     recognition.interimResults = true; // Allows program to work before you quit speaking.
 
-    var p = document.createElement('p.document');
+    // var p = document.createElement('p.document');
     // var text;
     const text_field = document.querySelector('.text_field');
 
@@ -35,13 +35,13 @@ $(document).ready(function() {
     recognition.addEventListener('end', recognition.start);
     recognition.start();
 
-    function grabText() {
-        console.log(gon.global.document_text);
-        // const text = text_field.innerHTML;
-        // gon.document_text = text;
-        // console.log(gon.document_text);
-    }
-    document.querySelector('#document_save').addEventListener('click', grabText);
+    // function grabText() {
+    //     console.log(gon.global.document_text);
+    //     // const text = text_field.innerHTML;
+    //     // gon.document_text = text;
+    //     // console.log(gon.document_text);
+    // }
+    // document.querySelector('#document_save').addEventListener('click', grabText);
 
 });
 
